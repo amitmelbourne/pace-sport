@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PACE.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/src/pace.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body, html {
+          height: 100%;
+          color: #777;
+          line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+          background-image: url('/src/parallax2.jpg');
+          min-height: 10%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+          background-image: url("/src/parallax1.jpg");
+          min-height: 100px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+          background-image: url("/src/parallax3.jpg");
+          min-height: 100px;
+        }
+
+        .pace-wide {letter-spacing: 10px;}
+        .pace-hover-opacity {cursor: pointer;}
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+          .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="pace-top">
+    <div class="pace-bar" id="myNavbar">
+        <a class="pace-bar-item pace-button pace-hover-black pace-hide-medium pace-hide-large pace-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="pace-bar-item pace-button">HOME</a>
+        <a href="#about" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#athletes" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> ATHELETS</a>
+        <a href="#expertTeams" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> Expert Team</a>
+        <a href="#partners" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> PARTNERS</a>
+        <a href="#educationalProg" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> Educational Programs</a>
+        <a href="#contact" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#" class="pace-bar-item pace-button pace-hide-small pace-right pace-hover-red">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="pace-bar-block pace-white pace-hide pace-hide-large pace-hide-medium">
+        <a href="#about" class="pace-bar-item pace-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#athletes" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> ATHELETS</a>
+        <a href="#partners" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> PARTNERS</a>
+        <a href="#educationalProg" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> Educational Programs</a>
+        <a href="#contact" class="pace-bar-item pace-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="pace-bar-item pace-button">SEARCH</a>
+    </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-2 pace-display-container pace-opacity-min" id="home">
+    <div class="pace-display-middle" style="white-space:nowrap;">
+        <span class="pace-center pace-padding-large pace-black pace-xlarge pace-wide pace-animate-opacity">PACE <span class="pace-hide-small">SPORTS</span>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="pace-content pace-container" id="about">
+    <h3 class="pace-center">ABOUT ME</h3>
+    <p class="pace-center"><em>Professional Athelete Centre Of Excellence</em></p>
+    <p class="pace-center">Development of Professional sports culture in Ahmedabad/Gujarat/India from Nursery level to Elite level.</p>
+    <div class="pace-row">
+        <div class="pace-col m6 pace-hide-small">
+        <p><b><i class="fa fa-user pace-margin-right"></i>Pace Sports Programs</b><br>
+        <b><i class="fa fa-user pace-margin-right"></i>Talent Identification</b></p><br>
+            <table>
+              <tr>
+                <td>Kids Athletics Stage-I</td>
+                <td>06-09 Years</td>
+                <td>Target 2036-2040 Olympics</td>
+                <td>Nov 2024</td>
+              </tr>
+              <tr>
+                  <td>Kids Athletics Stage-II</td>
+                  <td>09-12 Years</td>
+                  <td>Target 2032-2036 Olympics</td>
+                  <td>Nov 2024</td>
+              </tr>
+            </table>
+
+            <p><b><i class="fa fa-user pace-margin-right"></i>Selection of Athletes of all age groups: Nov 2024</b><br>
+                <b><i class="fa fa-user pace-margin-right"></i>Coaching Programs</b></p><br>
+            <table>
+                <tr>
+                    <td>Athletics Training</td>
+                    <td>Age groups</td>
+                    <td>No of Days in Weeks</td>
+                    <td>Target Olympics</td>
+                    <td>Duration</td>
+                    <td>Seat</td>
+                </tr>
+                <tr>
+                    <td>Nursery Athletics</td>
+                    <td>3-5 Yrs</td>
+                    <td>2-3 Sessions</td>
+                    <td>2040-2044</td>
+                    <td>Full years</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kids Athletics Stage-I</td>
+                    <td>06-09 Years</td>
+                    <td>2-3 Session/td>
+                    <td>2036-2040</td>
+                    <td>Full years</td>
+                    <td>Selected Group 40 Nos</td>
+                </tr>
+                <tr>
+                    <td>Kids Athletics Stage-II</td>
+                    <td>09-12 Years</td>
+                    <td>3-4 Sessions</td>
+                    <td>2032-2036</td>
+                    <td>Full years</td>
+                    <td>Selected Group 40 Nos</td>
+                </tr>
+                <tr>
+                    <td>Junior Athletics</td>
+                    <td>13-16 Years</td>
+                    <td>7-8 Sessions</td>
+                    <td>State/National/International Competitions</td>
+                    <td>Full years</td>
+                    <td>Advance Group 20 Nos</td>
+                </tr>
+                <tr>
+                    <td>Youth Athletics</td>
+                    <td>17-20 Years</td>
+                    <td>8-9 Sessions</td>
+                    <td>State/National/International Competitions</td>
+                    <td>Full years</td>
+                    <td>Advance Group 20 Nos</td>
+                </tr>
+                <tr>
+                    <td>Senior Athletics</td>
+                    <td>21 Years and Above</td>
+                    <td>9-10 Sessions</td>
+                    <td>State/National/International Competitions</td>
+                    <td>Full years</td>
+                    <td>Elite Group 15 Nos and Adavance Groupt 10 Nos</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p class="pace-large pace-center pace-padding-16">We provide strength and Conditioning Programs for all age groups
+    :Athletics, Cricekt, Tennis, Badminton, Aquatics and Football</p>
+    <!--<img src="/src/img/sports1.jpg" class="image-center pace-round pace-image pace-opacity pace-hover-opacity-off" alt="Photo of pace" width="500" height="333"> -->
+</div>
+
+<div class="pace-content pace-container" id="athletes">
+    <h3 class="pace-center">ATHLETES</h3>
+    <div class="pace-row">
+        <div class="pace-col m6 pace-hide-small pace-padding-large">
+            <table>
+                <tr>
+                    <td>Athletics Training</td>
+                    <td>Age groups</td>
+                    <td>No of Days in Weeks</td>
+                    <td>Target Olympics</td>
+                    <td>Duration</td>
+                    <td>Seat</td>
+                </tr>
+                <tr>
+                    <td>Nursery Athletics</td>
+                    <td>3-5 Yrs</td>
+                    <td>2-3 Sessions</td>
+                    <td>2040-2044</td>
+                    <td>Full years</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kids Athletics Stage-I</td>
+                    <td>06-09 Years</td>
+                    <td>2-3 Session/td>
+                    <td>2036-2040</td>
+                    <td>Full years</td>
+                    <td>Selected Group 40 Nos</td>
+                </tr>
+                <tr>
+                    <td>Kids Athletics Stage-II</td>
+                    <td>09-12 Years</td>
+                    <td>3-4 Sessions</td>
+                    <td>2032-2036</td>
+                    <td>Full years</td>
+                    <td>Selected Group 40 Nos</td>
+                </tr>
+                <tr>
+                    <td>Junior Athletics</td>
+                    <td>13-16 Years</td>
+                    <td>7-8 Sessions</td>
+                    <td>State/National/International Competitions</td>
+                    <td>Full years</td>
+                    <td>Advance Group 20 Nos</td>
+                </tr>
+                <tr>
+                    <td>Youth Athletics</td>
+                    <td>17-20 Years</td>
+                    <td>8-9 Sessions</td>
+                    <td>State/National/International Competitions</td>
+                    <td>Full years</td>
+                    <td>Advance Group 20 Nos</td>
+                </tr>
+                <tr>
+                    <td>Senior Athletics</td>
+                    <td>21 Years and Above</td>
+                    <td>9-10 Sessions</td>
+                    <td>State/National/International Competitions</td>
+                    <td>Full years</td>
+                    <td>Elite Group 15 Nos and Adavance Groupt 10 Nos</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="pace-content pace-container" id="partners">
+    <h3 class="pace-center">Partners</h3>
+    <p class="pace-large pace-center pace-padding-16">Savy Swaraj Sports Club</p>
+</div>
+
+<div class="pace-content pace-container" id="educationalProg">
+    <h3 class="pace-center">Educational Programs</h3>
+    <p class="pace-large pace-center pace-padding-16">Online Program by top coaches and scientist</p>
+</div>
+
+<div class="pace-content pace-container" id="expertTeams">
+    <h3 class="pace-center">Expert Team</h3>
+    <div class="pace-row">
+        <div class="pace-col m6 pace-hide-small pace-padding-large">
+            <table>
+                <tr>
+                    <td>SL.No</td>
+                    <td>Name</td>
+                    <td>Event</td>
+                    <td>Level</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>jebin Cb</td>
+                    <td>Sprinter</td>
+                    <td>National</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="pace-display-container pace-opacity-min">
+    <div class="pace-display-middle">
+        <span class="pace-xxlarge pace-text-white pace-wide">CONTACT</span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="pace-content pace-container pace-padding-64" id="contact">
+    <h3 class="pace-center">CONTACT US</h3>
+    <div class="pace-row pace-section">
+        <div class="pace-col m4 pace-container">
+            <img src="/src/sports1.jpg" class="" style="width:100%" alt="">
+        </div>
+        <div class="pace-col m8 pace-panel">
+
+            <form action="https://formspree.io/f/mgvevnwo" method="POST">
+                <div class="pace-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="pace-half">
+                        <input class="pace-input pace-border" type="text" placeholder="First Name" required name="First Name">
+                    </div>
+                    <div class="pace-half">
+                        <input class="pace-input pace-border" type="text" placeholder="Last Name" required name="Last Name">
+                    </div>
+                    <div class="pace-half">
+                        <input class="pace-input pace-border" type="text" placeholder="Phone No" required name="Phone No">
+                    </div>
+                    <div class="pace-half">
+                        <input class="pace-input pace-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="pace-input pace-border" type="text" placeholder="Message" required name="Message">
+                <button class="pace-button pace-black pace-right pace-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="pace-center pace-black pace-padding-64 pace-opacity pace-hover-opacity-off">
+    <a href="#home" class="pace-button pace-light-grey"><i class="fa fa-arrow-up pace-margin-right"></i>To the top</a>
+    <div class="pace-xlarge pace-section">
+        <i class="fa fa-facebook-official pace-hover-opacity"></i>
+        <i class="fa fa-instagram pace-hover-opacity"></i>
+        <i class="fa fa-snapchat pace-hover-opacity"></i>
+        <i class="fa fa-pinterest-p pace-hover-opacity"></i>
+        <i class="fa fa-twitter pace-hover-opacity"></i>
+        <i class="fa fa-linkedin pace-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="" title="pace.com" target="_blank" class="pace-hover-text-green">pace.com</a></p>
+</footer>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "pace-bar" + " pace-card" + " pace-animate-top" + " pace-white";
+        } else {
+            navbar.className = navbar.className.replace(" pace-card pace-animate-top pace-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("pace-show") == -1) {
+            x.className += " pace-show";
+        } else {
+            x.className = x.className.replace(" pace-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>
