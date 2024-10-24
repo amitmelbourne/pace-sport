@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-        body, html {
-          height: 100%;
-          color: #777;
-          line-height: 1.8;
-        }
+
+        /* Create a Div Effect */
+         .div-1 {
+        background-color: #008080;
+         }
+
+        .div-2 {
+        background-color: #ABBAEA;
+         }
+
+        .div-3 {
+        background-color: #9FE2BF;
+         }
 
         /* Create a Parallax Effect */
         .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -68,19 +76,18 @@
         </a>
         <a href="#home" class="pace-bar-item pace-button">HOME</a>
         <a href="#about" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-        <a href="#athletes" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> ATHELETS</a>
+        <a href="#athletes" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> ATHLETES</a>
+        <a href="#programs" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> PROGRAMS & PARTNERS</a>
         <a href="#expertTeams" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> Expert Team</a>
-        <a href="#partners" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> PARTNERS</a>
-        <a href="#educationalProg" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> Educational Programs</a>
         <a href="#contact" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="pace-bar-block pace-white pace-hide pace-hide-large pace-hide-medium">
         <a href="#about" class="pace-bar-item pace-button" onclick="toggleFunction()"><i class="fa fa-th"></i>ABOUT</a>
-        <a href="#athletes" class="pace-bar-item pace-button"><i class="fa fa-th"></i> ATHELETS</a>
-        <a href="#partners" class="pace-bar-item pace-button"><i class="fa fa-th"></i> PARTNERS</a>
-        <a href="#educationalProg" class="pace-bar-item pace-button"><i class="fa fa-th"></i> Educational Programs</a>
+        <a href="#athletes" class="pace-bar-item pace-button"><i class="fa fa-th"></i> ATHLETES</a>
+        <a href="#programs" class="pace-bar-item pace-button"><i class="fa fa-th"></i>  PROGRAMS & PARTNERS</a>
+        <a href="#expertTeams" class="pace-bar-item pace-button pace-hide-small"><i class="fa fa-th"></i> Expert Team</a>
         <a href="#contact" class="pace-bar-item pace-button" onclick="toggleFunction()"><i class="fa fa-th"></i>CONTACT</a>
     </div>
 </div>
@@ -95,14 +102,15 @@
 </div>
 
 <!-- Container (About Section) -->
-<div class="bgimg-1 pace-content pace-container" id="about">
-    <h3 class="pace-center">ABOUT ME</h3>
+<div class="div-3 pace-content" id="about">
+    <marquee>
     <p class="pace-center"><em>Professional Athelete Centre Of Excellence</em></p>
+    </marquee>
+    <h3 class="pace-center">ABOUT</h3>
     <p class="pace-center">Development of Professional sports culture in Ahmedabad/Gujarat/India from Nursery level to Elite level.</p>
     <div class="pace-row">
         <div class="pace-col">
-        <p><b><i class="fa fa-user pace-margin-right"></i>Pace Sports Programs</b><br>
-        <b><i class="fa fa-user pace-margin-right"></i>Talent Identification</b></p><br>
+        <p class="pace-center"><b><i class="fa fa-user pace-margin-right"></i>Pace Sports Programs and Talent Identification: </b><br>
             <table>
                 <tr>
                     <th>Stage</th>
@@ -125,7 +133,7 @@
             </table>
 
             <p><b><i class="fa fa-user pace-margin-right"></i>Selection of Athletes of all age groups: Nov 2024</b><br>
-                <b><i class="fa fa-user pace-margin-right"></i>Coaching Programs</b></p><br>
+                <b><i class="fa fa-user pace-margin-right"></i>Coaching Programs: </b></p><br>
             <table>
                 <tr>
                     <th>Athletics Training</th>
@@ -186,89 +194,15 @@
             </table>
         </div>
     </div>
+    <marquee>
     <p class="pace-large pace-center pace-padding-16">We provide strength and Conditioning Programs for all age groups
     :Athletics, Cricekt, Tennis, Badminton, Aquatics and Football</p>
+    </marquee>
     <!--<img src="/src/img/sports1.jpg" class="image-center pace-round pace-image pace-opacity pace-hover-opacity-off" alt="Photo of pace" width="500" height="333"> -->
 </div>
 
-<div class="pace-content pace-container" id="athletes">
+<div class="div-1 pace-content" id="athletes">
     <h3 class="pace-center">ATHLETES</h3>
-    <div class="pace-row">
-        <div class="pace-col pace-padding-large">
-            <table>
-                <tr>
-                    <th>Athletics Training</th>
-                    <th>Age groups</th>
-                    <th>No of Days in Weeks</th>
-                    <th>Target Olympics</th>
-                    <th>Duration</th>
-                    <th>Seat</th>
-                </tr>
-                <tr>
-                    <td>Nursery Athletics</td>
-                    <td>3-5 Yrs</td>
-                    <td>2-3 Sessions</td>
-                    <td>2040-2044</td>
-                    <td>Full years</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Kids Athletics Stage-I</td>
-                    <td>06-09 Years</td>
-                    <td>2-3 Session/td>
-                    <td>2036-2040</td>
-                    <td>Full years</td>
-                    <td>Selected Group 40 Nos</td>
-                </tr>
-                <tr>
-                    <td>Kids Athletics Stage-II</td>
-                    <td>09-12 Years</td>
-                    <td>3-4 Sessions</td>
-                    <td>2032-2036</td>
-                    <td>Full years</td>
-                    <td>Selected Group 40 Nos</td>
-                </tr>
-                <tr>
-                    <td>Junior Athletics</td>
-                    <td>13-16 Years</td>
-                    <td>7-8 Sessions</td>
-                    <td>State/National/International Competitions</td>
-                    <td>Full years</td>
-                    <td>Advance Group 20 Nos</td>
-                </tr>
-                <tr>
-                    <td>Youth Athletics</td>
-                    <td>17-20 Years</td>
-                    <td>8-9 Sessions</td>
-                    <td>State/National/International Competitions</td>
-                    <td>Full years</td>
-                    <td>Advance Group 20 Nos</td>
-                </tr>
-                <tr>
-                    <td>Senior Athletics</td>
-                    <td>21 Years and Above</td>
-                    <td>9-10 Sessions</td>
-                    <td>State/National/International Competitions</td>
-                    <td>Full years</td>
-                    <td>Elite Group 15 Nos and Adavance Groupt 10 Nos</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</div>
-
-<div class="pace-content pace-container" id="partners">
-    <h3 class="pace-center">Partners</h3>
-    <p class="pace-large pace-center pace-padding-16">Savvy Swaraj Sports Club</p>
-</div>
-
-<div class="pace-content pace-container" id="educationalProg">
-    <h3 class="pace-center">Educational Programs</h3>
-    <p class="pace-large pace-center pace-padding-16">Online Program by top coaches and scientists</p>
-</div>
-
-<div class="pace-content pace-container" id="expertTeams">
-    <h3 class="pace-center">Expert Team</h3>
     <div class="pace-row">
         <div class="pace-col pace-padding-large">
             <table>
@@ -338,23 +272,51 @@
                     <td>Sprinter</td>
                     <td>National</td>
                 </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="div-3 pace-content" id="programs">
+    <h3 class="pace-center">Venue Partners:</h3>
+    <p class="pace-center ">Savvy Swaraj Sports Club</p>
+    <h3 class="pace-center">Educational Programs:</h3>
+    <p class="pace-center ">Online Program by top coaches and scientists</p>
+    <h3 class="pace-center">Competition Programs:</h3>
+    <p class="pace-center ">Weekend Athletics Competitions for all age groups</p>
+    <h3 class="pace-center">Talent Identification and Fitness Assessment Programs:</h3>
+    <p class="pace-center ">At Pace recognized Center</p>
+</div>
+
+<!--<div class="pace-content pace-container" id="educationalProg">
+    <h3 class="pace-center">Educational Programs</h3>
+    <p class="pace-large pace-center pace-padding-16">Online Program by top coaches and scientists</p>
+</div>-->
+
+<div class="div-1 pace-content" id="expertTeams">
+    <h3 class="pace-center">Expert Team</h3>
+    <div class="pace-row">
+        <div class="pace-col pace-padding-large">
+            <table>
                 <tr>
-                    <td>11</td>
-                    <td>Chetna Gelucha</td>
-                    <td>Sprinter</td>
-                    <td>National</td>
+                    <th>Expert Coaches</th>
+                    <th>Expert Doctor and Scientist</th>
+                    <th>Expert Trainers and Technologies</th>
                 </tr>
                 <tr>
-                    <td>12</td>
-                    <td>Jaival Trivedi</td>
-                    <td>Sprinter</td>
-                    <td></td>
+                    <td>Mr Apurba Biswas(NIS)</td>
+                    <td>Dr Modi Sports and Medicine Experts</td>
+                    <td>Mr Baibhab Kids Certified Trainer</td>
                 </tr>
                 <tr>
-                    <td>13</td>
-                    <td>Rahil Modi</td>
-                    <td>Sprinter</td>
-                    <td></td>
+                    <td>Mr Dilip Pandey(NIS)</td>
+                    <td>Mr Harshdeep Anthropometry</td>
+                    <td>Mr Ayan Biswas Media And Communication Expert</td>
+                </tr>
+                <tr>
+                    <td>Mr Pallav (NIS)(S & C Certified Coac)</td>
+                    <td>Miss Manal Bole Psychologist</td>
+                    <td>Mr Dinesh Suther Recovery specialist</td>
                 </tr>
             </table>
         </div>
@@ -362,14 +324,13 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="pace-content pace-container pace-padding-64" id="contact">
+<div class="div-3 pace-content" id="contact">
     <h3 class="pace-center">CONTACT US</h3>
     <div class="pace-row pace-section">
         <div class="pace-col m4 pace-container">
             <img src="/public/sports1.jpg" class="" style="width:100%" alt="">
         </div>
         <div class="pace-col m8 pace-panel">
-
             <form action="https://formspree.io/f/mgvevnwo" method="POST">
                 <div class="pace-row-padding" style="margin:0 -16px 8px -16px">
                     <div class="pace-half">
@@ -384,8 +345,10 @@
                     <div class="pace-half">
                         <input class="pace-input pace-border" type="text" placeholder="Email" required name="Email">
                     </div>
+                    <div class="pace-half">
+                        <input class="pace-input pace-border" type="text" placeholder="Message" required name="Message">
+                    </div>
                 </div>
-                <input class="pace-input pace-border" type="text" placeholder="Message" required name="Message">
                 <button class="pace-button pace-black pace-right pace-section" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 </button>
@@ -395,7 +358,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="pace-center pace-black pace-padding-64 pace-opacity pace-hover-opacity-off">
+<footer class="pace-center div-1 pace-padding-64 pace-opacity pace-hover-opacity-off">
     <a href="#home" class="pace-button pace-light-grey"><i class="fa fa-arrow-up pace-margin-right"></i>To the top</a>
     <div class="pace-xlarge pace-section">
         <i class="fa fa-facebook-official pace-hover-opacity"></i>
