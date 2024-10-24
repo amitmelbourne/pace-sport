@@ -16,7 +16,7 @@
         }
 
         /* Create a Parallax Effect */
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
           background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
@@ -25,13 +25,13 @@
 
         /* First image (Logo. Full height) */
         .bgimg-1 {
-          background-image: url('/public/parallax2.jpg');
+          background-image: url('/public/parallax4.jpg');
           min-height: 10%;
         }
 
         /* Second image (Portfolio) */
         .bgimg-2 {
-          background-image: url("/public/parallax1.jpg");
+          background-image: url("/public/parallax3.jpg");
           min-height: 100px;
         }
 
@@ -41,17 +41,22 @@
           min-height: 100px;
         }
 
+        .bgimg-4 {
+          background-image: url('/public/parallax4.jpg');
+          min-height: 100%;
+        }
+
         .pace-wide {letter-spacing: 10px;}
         .pace-hover-opacity {cursor: pointer;}
 
         /* Turn off parallax scrolling for tablets and phones */
         @media only screen and (max-device-width: 1600px) {
-          .bgimg-1, .bgimg-2, .bgimg-3 {
+          .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
             background-attachment: scroll;
             min-height: 400px;
           }
         }
-    </style>
+        <img src="../public/parallax1.jpg"/></style>
 </head>
 <body>
 
@@ -90,7 +95,7 @@
 </div>
 
 <!-- Container (About Section) -->
-<div class="pace-content pace-container" id="about">
+<div class="bgimg-1 pace-content pace-container" id="about">
     <h3 class="pace-center">ABOUT ME</h3>
     <p class="pace-center"><em>Professional Athelete Centre Of Excellence</em></p>
     <p class="pace-center">Development of Professional sports culture in Ahmedabad/Gujarat/India from Nursery level to Elite level.</p>
